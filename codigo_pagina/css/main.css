@@ -1,0 +1,67 @@
+
+:root {
+    --color-fondo: #fdf6f0;        /* Fondo crema claro */
+    --color-primario: #ffe4e1;     /* Rosado pastel */
+    --color-secundario: #add8e6;   /* Azul pastel */
+    --color-texto: #555555;        /* Gris oscuro suave */
+}
+
+
+body {
+    background-color: var(--color-fondo);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: var(--color-texto);
+    margin: 0;
+    padding: 0;
+}
+
+
+header {
+    background-color: var(--color-primario);
+    color: var(--color-texto);
+    border-bottom: 2px solid #ddd;
+}
+
+
+nav a {
+    color: var(--color-texto);
+    text-decoration: none;
+    margin: 0 10px;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: var(--color-secundario);
+}
+
+
+main h2 {
+    color: var(--color-secundario);
+    margin-bottom: 1rem;
+}
+
+footer {
+    background-color: var(--color-primario);
+    border-top: 2px solid #ddd;
+    font-size: 0.9rem;
+    color: var(--color-texto);
+}
+
+
+@media screen and (max-width: 600px) {
+    nav a {
+        display: block;
+        margin: 10px 0;
+    }
+}
+
+.btn-primary {
+    background-color: #add8e6;
+    border-color: #add8e6;
+    color: #333;
+}
+.btn-primary:hover {
+    background-color: #a0cfe6;
+    border-color: #a0cfe6;
+}
